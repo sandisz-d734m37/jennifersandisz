@@ -156,36 +156,47 @@ function App() {
       <div className="flex-1">
         <FullScreenSection id="home">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="text-center lg:py-[20vh] py-[5vh]">
-              <div className="flex justify-center mb-4">
+            <div className="text-center lg:py-[20vh] py-[15vh]">
+              <div className="flex justify-center">
                 <img
-                  src={scmtLogo}
-                  alt="SCMT logo"
-                  className="w-[100px] h-[100px] mb-[10vh]"
+                  src="https://jennifersandisz.s3.us-east-2.amazonaws.com/general_assets/jennifersandisz_black.svg"
+                  alt="JenniferSandisz logo"
+                  className="lg:w-[500px] lg:h-[500px] w-[250px] h-[250px]"
                 />
               </div>
 
-              <h1 className="lg:text-5xl text-2xl font-bold mb-[10vh]">
+              {/* <h1 className="lg:text-5xl text-2xl font-bold mb-[10vh]">
                 Sandisz C.M. Thieme
-              </h1>
-              <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
+              </h1> */}
+              <p className="google-sans-code-mypfolio text-lg mb-[5vh]">
+                COMING SOON
+              </p>
 
-              <div className="d-flex flex-col gap-3 py-5">
-                {sections.map((section) => (
+              <div className="d-flex flex-col gap-3">
+                <p>
+                  For now:{" "}
+                  <a
+                    style={{ fontWeight: 900 }}
+                    href="mailto:sandisthieme@gmail.com"
+                  >
+                    email us
+                  </a>
+                </p>
+                {/* {sections.map((section) => (
                   <button
                     key={section.id}
                     onClick={() => goToSection(section)}
-                    className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
+                    className="px-2 text-left text-lg hover:underline text-black dark:text-white google-sans-code-mypfolio"
                   >
                     {section.label}
                   </button>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
         </FullScreenSection>
 
-        {collapsibleSections.map(({ id, label, Component }) => (
+        {/* {collapsibleSections.map(({ id, label, Component }) => (
           <CollapsibleSection
             key={id}
             id={id}
@@ -205,7 +216,7 @@ function App() {
           <p>
             <a href="mailto:sandiszthieme@gmail.com">sandiszthieme@gmail.com</a>
           </p>
-        </Section>
+        </Section> */}
       </div>
     </div>
   );
